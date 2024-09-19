@@ -1,0 +1,497 @@
+/* ESTABLISHING A CLEAN SLATE */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+}
+
+/* NAVBAR SECTION */
+nav{
+    background-color: #ffffff;
+    height: 65px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+ 
+span.logo{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    line-height: 65px;
+    padding: 0px 75px;
+    font-weight: 900;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 65px;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: black;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 17px 13px;
+    text-decoration: none; 
+}
+
+a:hover{
+    color: rgb(0, 0, 0) !important;
+    border-bottom: 4px solid #C117C5;
+    border-radius: 3px;
+    transition: 50ms ease-in-out;
+}
+
+.checkbtn{
+    color: black;
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* HOME SECTION */
+.text1{
+    text-align: center;
+    margin-top: 80px;
+}
+
+span{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+}
+
+.main{
+    color: #C117C5;
+}
+
+.col{
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    letter-spacing: 5px;
+    border-right: 7px solid transparent;
+    border-image: linear-gradient(#C117C5,#3532CB);
+    border-image-slice: 1;
+}
+
+.col:nth-of-type(3){
+    border: none;
+}
+
+/* STYLING OF BUTTONS */
+#btn, .btn4{
+    background-color: #C117C5;
+    padding: 19px 25px;
+    border-radius: 40px;
+    font-family: 'inter', sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    border-bottom: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.25s;
+}
+
+#btntwo, #btnthree{
+    padding: 15px 25px;
+    border-radius: 40px;
+    border: 2px solid #C117C5;
+    font-family: 'inter', sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: #C117C5 ;
+}
+
+.btn1{
+    margin-top: 80px;
+}
+
+.btn2{
+    margin-top: 30px;  
+}
+
+#btntwo{
+    padding: 12px 29px;
+}
+
+.btn3{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.btn4{
+    padding: 12px 45px;
+    margin-top: 15px;
+    border: none;
+}
+
+#btn:hover{
+    color: rgb(255, 255, 255) !important;
+    background-color: #ab03ad;
+}
+
+#btntwo:hover, #btnthree:hover, .btn4:hover{
+    background-color: #C117C5;
+    color: white !important;
+    transition: 0.25s;
+}
+
+/* STYLING OF HEADINGS */
+.p1,.p2,.p3{
+    text-align: center;
+    margin-top: 130px;
+    color: rgb(95, 95, 95);
+    letter-spacing: 2px;
+    font-family: 'inter', sans-serif;
+    font-weight: 800;
+    font-size: 44px;
+}
+
+.p4{
+    color: rgb(95, 95, 95);
+    letter-spacing: 2px;
+    font-family: 'inter', sans-serif;
+    font-weight: 800;
+    font-size: 44px;
+}
+
+/* PORTFOLIO SECTION */
+.row .port{
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.fit{
+    height: 200px;
+    width: 280px;
+    margin: 0 auto !important;
+    border: 2px solid #5a667013;
+    transition: all 0.1s;
+}
+
+.img1, .img2, .img3{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.fit:hover{
+    box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.267);
+    border: 5px solid #046dcf56;
+    border-radius: 5px;
+}
+
+.work div{
+    padding: 15px 0;
+}
+
+.aimg{
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+    line-height: 1px;
+    color: black;
+}
+
+.aimg:hover{
+    background-color: rgba(0, 0, 0, 0.452);
+    border-bottom: none;
+    border-radius: 5px;
+    padding: 5px 9px;
+    transition: 0.25s;
+}
+
+.accordion-body{
+    line-height: 7px;
+    font-size: 13px;
+}
+
+/* ABOUT ME SECTION */
+.profile img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.me{
+    text-align: left;
+    font-family: 'inter', sans-serif;
+    font-weight: 300;
+}
+
+
+/* CONTACT SECTION */
+.grid4{
+    padding-top: 150px;
+}
+
+.icon{
+    font-family: 'inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.social-icons a{
+    border-bottom: none;
+    text-decoration: none;
+    padding-right: 5px;
+    padding-bottom: 35px;
+    color: #5f5f5f !important;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.social-icons a i:hover{
+    color: #C117C5;
+    transform: translateY(-5px);
+    transition: all 0.5s;
+}
+
+form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    background: #ffffff;
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 18px;
+    font-family: 'inter', sans-serif;
+    border-radius: 40px;
+}
+
+
+/* COPYRIGHT SECTION */
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 38px;
+    background: #5f5f5f;
+    font-weight: 300;
+    font-family: 'inter', sans-serif;
+    font-size: 13px;
+    color: white;
+    height: 50px;
+    border-radius: 40px;
+}
+
+
+/* RESERVED FOR SMALLER SCREENS */
+.jack{
+    display: none;
+}
+
+
+/* INNER HTML TEXT FOR CONTACT FORM */
+#msg{
+    font-family: 'inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #61b752;
+    margin-top: 6px;
+    display: block;
+}
+
+
+/* COLOR EFFECT FOR COPYRIGHT SECTION */
+.copyright:hover{
+    animation-name: colorchange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    color: #fff;
+}
+
+@keyframes colorchange {
+    25%{
+        background-color: rgb(0, 21, 211);
+    }
+
+    50%{
+        background-color: rgb(103, 0, 151);
+    }
+
+    75%{
+        background-color: rgb(69, 19, 150);
+    }
+
+    100%{
+        background-color: rgb(3, 103, 197);
+    }
+}
+
+
+/* MEDIA QUERY FOR TABLETS */
+@media (max-width: 994px){
+    
+    span.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    .grid1 .work{
+        margin-top: 50px;
+    }
+
+    nav ul{
+        margin-right: 10px;
+    }
+    
+    nav ul li{
+        margin: 0 10px;
+    }
+
+    .text1 span{
+        font-size: 75px;
+    }
+
+    .grid .col{
+        font-size: 26px;
+        height: 70px;
+    }
+
+    .checkbtn{
+        display: block;
+        margin-top: 16px;
+        cursor: pointer;
+    }
+
+    .checkbtn:hover{
+       border-radius: 10px;
+       background-color: rgb(233, 233, 233);
+    }
+    
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: hsl(0, 0%, 100% / 0.1);
+        backdrop-filter: blur(6.5px);
+        left: -100%;
+        transition: all 550ms ease-in-out;
+    }
+    
+    nav ul li{
+        display: block;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+/* MEDIA QUERY FOR PHONES */
+@media (max-width: 768px){
+    .text1{
+        margin-top: 60px;
+    }
+
+    .text1 span{
+        font-size: 50px;
+    }
+
+    .grid{
+        margin-top: -15px;
+    }
+
+    .grid .col{
+        font-size: 20px;
+        height: 50px;
+        display: none;
+    }
+    
+    .jack{
+        margin-top: 15px;
+        display: block;
+    }
+
+    .jack1, .jack2{
+        font-family: 'inter', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .jack3{
+        font-family: 'inter', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        background: linear-gradient(180deg,#5f5f5f,#333232);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .btn1{
+        margin-top: 30px;
+    }
+    
+    #btn{
+        padding: 16px 22px;
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+    span.logo{
+        font-size: 25px;
+        padding-left: 30px;
+    }
+
+    form input, form textarea{
+        padding: 13px;
+        margin: 15px 0;
+        color: black;
+        font-size: 15px;
+        font-family: 'inter', sans-serif;
+        border-radius: 40px;
+    }
+
+    .p1, .p2, .p3, .p4{
+        font-size: 35px;
+    }
+
+    .me{
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    .accordion-button.collapsed{
+        font-size: 14px;
+    }
+}
